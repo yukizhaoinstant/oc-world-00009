@@ -2,10 +2,140 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>OC World</title>
+  <title>OC 世界 · 简介</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Microsoft JhengHei", sans-serif;
+      background:#0b0b0f;
+      color:#eaeaf0;
+    }
+
+    /* 顶部导航 */
+    nav{
+      display:flex;
+      gap:24px;
+      padding:16px 24px;
+      background:#111;
+      border-bottom:1px solid #222;
+    }
+    nav a{
+      color:#aaa;
+      text-decoration:none;
+      letter-spacing:2px;
+    }
+    nav a:hover{
+      color:#fff;
+    }
+
+    /* 主体 */
+    .container{
+      max-width:800px;
+      margin:60px auto;
+      padding:0 24px;
+    }
+
+    h1{
+      font-size:32px;
+      margin-bottom:12px;
+    }
+
+    .intro{
+      color:#b6b6c9;
+      line-height:1.8;
+      margin-bottom:40px;
+    }
+
+    /* 按钮 */
+    .btn{
+      display:inline-block;
+      padding:12px 26px;
+      border-radius:999px;
+      background:#1f1f2e;
+      color:#fff;
+      text-decoration:none;
+      letter-spacing:2px;
+      transition:0.2s;
+    }
+    .btn:hover{
+      background:#34345a;
+      transform:translateY(-2px);
+    }
+
+    /* 卡片区 */
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      margin-top:50px;
+    }
+
+    .card{
+      padding:20px;
+      background:#13131c;
+      border:1px solid #242436;
+      border-radius:16px;
+    }
+
+    .card h2{
+      margin:0 0 8px;
+      font-size:18px;
+    }
+
+    .card p{
+      font-size:14px;
+      color:#aaa;
+      line-height:1.6;
+    }
+
+    .card a{
+      display:inline-block;
+      margin-top:12px;
+      color:#9aa0ff;
+      text-decoration:none;
+    }
+    .card a:hover{
+      text-decoration:underline;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>OC 世界</h1>
-  <p>世界咪</p>
+
+  <!-- 顶部导航 -->
+  <nav>
+    <a href="index.html">首页</a>
+    <a href="world.html">世界观</a>
+  </nav>
+
+  <!-- 主体内容 -->
+  <div class="container">
+    <h1>OC 世界</h1>
+
+    <p class="intro">
+      这是一个关于魔法与政治交织的世界。  
+      权力并非来自血统，而是来自被书写、被承认的规则。
+    </p>
+
+    <!-- 主要入口按钮 -->
+    <a class="btn" href="world.html">进入世界观</a>
+
+    <!-- 卡片式入口 -->
+    <div class="cards">
+      <div class="card">
+        <h2>世界观</h2>
+        <p>时代背景、规则体系，以及这个世界为何走到现在。</p>
+        <a href="world.html">查看 →</a>
+      </div>
+
+      <div class="card">
+        <h2>角色</h2>
+        <p>被权力牵引的个体：攻与受，以及他们的位置。</p>
+        <a href="characters.html">查看 →</a>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
